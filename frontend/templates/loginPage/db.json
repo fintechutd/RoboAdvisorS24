@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "id": "fa92",
+      "firstName": "Muhd",
+      "lastName": "Haque",
+      "email": "a@gmail.com",
+      "password": "abc"
+    },
+    {
+      "id": "3dfa",
+      "firstName": "Muhd",
+      "lastName": "Haque",
+      "email": "a@b.c",
+      "password": "1234"
+    },
+    {
+      "id": "8f14",
+      "firstName": "Muhd",
+      "lastName": "Haque",
+      "email": "muhd.ayman.haque@gmail.com",
+      "password": "dsf"
+    },
+    {
+      "id": "5f04",
+      "firstName": "Muhd",
+      "lastName": "Haque",
+      "email": "d@g.c",
+      "password": "s"
+    }
+  ]
+}
