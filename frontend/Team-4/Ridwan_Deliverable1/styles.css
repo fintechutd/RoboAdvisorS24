@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#displayArea {
+    margin-top: 20px;
+    color: green;
+    font-size: 20px;
+}

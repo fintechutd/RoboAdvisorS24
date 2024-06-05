@@ -1,0 +1,291 @@
+body {
+    font-family: 'Lato', sans-serif; 
+    background: linear-gradient(to top right, #9abcc8, #ffffff 50%, #9abcc8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* If you don't want scrollbars */
+
+}
+
+.title-with-logo {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: start; /* Align items to the start of the container */
+    margin-bottom: 20px; /* Add some margin below the title and logo */
+}
+
+.fintech-logo {
+    height: 50px; /* Or any size that suits your design */
+    margin-right: 10px; /* Add some space between the logo and the title */
+}
+
+.survey-title {
+    margin: 0; /* Remove default margin */
+    font-size: 24px;
+    color: #333;
+    padding: 5px;
+    /* Other styling as before */
+}
+
+
+.survey-container {
+    background: rgba(255, 255, 255, 10); /* Very slight transparency */
+    backdrop-filter: blur(10px); /* This will give a frosted glass effect */
+    width: calc(100vw - 40px); /* Adjust width as necessary */
+    height: calc(100vh - 40px); /* Adjust height as necessary */
+    padding: 20px;
+    border-radius: 20px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-sizing: border-box;
+    overflow: auto; /* In case the content overflows */
+    position: relative;
+}
+
+.question {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+    background-color: #d3d3d3; /* Light grey background */
+    padding: 20px; /* Add padding */
+    border-radius: 12px;
+}
+
+.option-label, .sortable-list .item {
+    font-family: 'Montserrat', sans-serif; /* Ensuring consistent font family */
+    font-weight: 300; /* Lighter font weight for better readability */
+    border: 1px solid #ccc; /* Consistent border */
+    padding: 15px 25px; /* Uniform padding */
+    border-radius: 9px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between options */
+    cursor: pointer; /* Cursor style for interactivity */
+    background-color: #fff; /* Background color */
+    display: block; /* Block display to align properly */
+    font-size: 16px; /* Consistent font size */
+}
+
+.option-input {
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns children with space between them */
+    align-items: center; /* Centers children vertically in the container */
+    padding: 0 10px; /* This adds some padding on the left and right */
+    width: 100%; /* Ensures the buttons div takes up full width of its container */
+}
+
+
+.buttons button:first-child {
+    margin-right: right; /* This pushes the first button to the left */
+    order: -1; /* This ensures the "Previous" button is always first */
+}
+
+.buttons button:last-child {
+    margin-left: auto; /* This pushes the last button to the right */
+}
+
+button {
+    padding: 15px 30px; /* Adjust padding to match the image */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #7F8C8D;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px; /* Adjust font-size for better visibility */
+    justify-content: space-between;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* If the .info-text class is not needed as per design, you can remove or hide it */
+.info-text {
+    display: none;
+}
+
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative; /* Added to position the bar */
+    margin: 20px 0; /* Adjust margin as necessary */
+    overflow: hidden;
+}
+
+.teal-bar {
+    height: 5px;
+    background-color: #abd3cb;
+    width: 0%; /* Set by dynamic style in component */
+    border-radius: 5px; /* Add rounded corners to the filled part */
+    transition: width 0.4s ease-in-out;
+}
+
+/* Style for the progress text, if you are displaying the question count */
+.progress-text {
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px; /* Adjust as necessary */
+}
+
+/* Update button classes to have consistent styling */
+.button1, .button2 {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.button.button1 {
+    background-color: #BDC3C7 ; /* Lighter color for the "Back" or "Cancel" button */
+}
+
+
+
+
+.button.button2 {
+    background-color: #6db8a9 ; /* Keep the "Next" button styling */
+    color: #fff;
+}
+
+
+.progress {
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0;
+    color: #333;
+}
+
+
+.special-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #64b5eb; /* Example background color */
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right; /* Make the button a block element to occupy its own line */
+    margin-left: auto;
+}
+
+/* Draggable list item styles */
+.sortable-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.sortable-list .item {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06); /* Subtle shadow for depth */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.sortable-list .item.drag-over {
+    /* This class should be toggled on the potential drop target */
+    transform: translateY(1.5em); /* Adjust the value based on your item's height */
+}
+
+.sortable-list .item.dragging {
+    opacity: 0.7;
+    transform: rotate(3deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sortable-list .placeholder {
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    margin-bottom: 10px; /* Same as your item margin */
+    border-radius: 9px; /* Same as your item border-radius */
+}
+
+
+.sortable-list .item:not(.dragging) {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for items */
+.sortable-list .item:hover:not(.dragging) {
+    background-color: #f0f0f0; /* Slightly darker to indicate hover state */
+}
+
+
+/* Add a pseudo-element for visual feedback when dragging over items */
+.sortable-list .item.over {
+    border-bottom: 2px solid #666; /* Indicator for drop location */
+}
+
+/* Adjust the CSS for when the item is over another item */
+.sortable-list .item.drag-over:not(.dragging) {
+    transform: translateY(20px); /* Move down slightly when over another item */
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details span {
+    flex-grow: 1; /* Allow text to fill the space */
+}
+
+.uil-draggabledots {
+    cursor: grab; /* Indicate draggable area */
+}
+
+
+
+.option-label:hover, .sortable-list .item:hover {
+    background-color: #f0f0f0; /* Slightly darker to indicate hover state */
+}
+
+
+
+/* Focus styles if needed */
+.option-label:focus, .sortable-list .item:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border on focus */
+}
+
+.hidden-but-occupying-space {
+    visibility: hidden;
+}
+
+
+input[type="radio"] {
+    margin-right: 15px; 
+}
+
+/* Style for the text next to the radio button */
+.option-label span {
+    margin-left: 8px; 
+}
+
+.option-label {
+    display: flex; /* Aligns the radio button and label in a row */
+    align-items: center; /* Vertically centers the radio button and label */
+    margin-bottom: 10px; 
+    
+}

@@ -1,0 +1,20 @@
+body, h1, h2, p, nav {
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    text-align: center;
+    padding: 20px;
+    color: blue
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: brown;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="newj.css">
+</head>
+<body>
+
+<div class="survey-container">
+    <div class="teal-bar"></div>
+    <div class="progress">Question 3 of 11</div>
+    <div class="question">
+        When it comes to investing in stock or bond mutual funds or ETFs - or individual stocks or bonds - I would describe myself as...
+    </div>
+    <form>
+        <label class="option-label">
+            <input type="radio" name="experience" class="option-input" /> 
+            Very inexperienced
+        </label>
+        <label class="option-label">
+            <input type="radio" name="experience" class="option-input" /> 
+            Somewhat inexperienced
+        </label>
+        <label class="option-label">
+            <input type="radio" name="experience" class="option-input" /> 
+            Somewhat experienced
+        </label>
+        <label class="option-label">
+            <input type="radio" name="experience" class="option-input" /> 
+            Experienced
+        </label>
+        <label class="option-label">
+            <input type="radio" name="experience" class="option-input" /> 
+            Very experienced
+        </label>
+        <div class="buttons">
+            <button class = "button1" type="button" onclick="goBack()">Back</button>
+            <button class = "button2" type="button" onclick="goNext()">Next</button>
+        </div>
+    </form>
+    <div class="info-text">
+        Market volatility can cause uncertainty and fear. Risk tolerance is how comfortable you are during volatile times, when market swings can dramatically change the value of your investments. This is another key factor in finding the right asset mix. Taking on more risk can lead to higher returns, but it can also result in substantial losses. Conversely, a mix that's too conservative can keep you from the growth you need to achieve your goals. We can help you find the balance that's right for you.
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
