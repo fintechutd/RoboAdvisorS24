@@ -1,0 +1,22 @@
+﻿Fintech Robo-Advisor (Frontend) Deliverables
+
+
+Deliverable 1: due Thursday, Feb 22
+* Join the Github as collaborator
+* Each team needs to make 1 static webpage using HTML/CSS/JS
+   * 3 files: index.html, styles.css, script.js
+   * Webpage should take input and display in console or on webpage
+* Research UI components of Robo-Advisors and list 10 necessary components (as team)
+
+
+Frontend:
+1. Different accounts for individual users, with different investments
+2. Chatbot for website navigation or common FAQs
+3. Header/Menu at the to navigate different sections of the website
+4. Calm music/graphics to give the user a relaxed experience 
+5. Section for displaying financial goals of the user
+6. Financial impact to see if this investment tolerates risk
+7. Graphs showing projected profits if investment advice is taken
+8. Pie charts showing the division of portfolio investments 
+9. Account funding and transaction/deposit history 
+10. List of stocks to invest in based on user risk data and market data

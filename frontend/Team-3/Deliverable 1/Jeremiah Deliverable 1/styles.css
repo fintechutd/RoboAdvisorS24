@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #333; /*sets color of header to dark grey*/
+    
+}
+
+#inputField {   /*specificies format of input field*/
+    width: 60%;
+    padding: 10px;
+    margin: 10px 2px;
+    box-sizing: border-box;
+}
+
+#displayArea {  /*specificies format of input bpx*/
+    width: 60%;
+    padding: 10px;
+    margin: 10px 2px;
+    box-sizing: border-box;
+    border: 1px solid #524e4e; /*border color*/
+    border-radius: 50px; /*curve of corners of box*/
+}
